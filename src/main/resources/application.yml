@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: euk2
+
+eureka:
+  instance:
+    appname: Eureka-Server
+    prefer-ip-address: false
