@@ -1,7 +1,6 @@
 server:
   port: 7001
 
-
 eureka:
   client:
     #是否将自己注册到Eureka Server,默认为true，由于当前就是server，故而设置成false，表明该服务不会向eureka注册自己的信息
@@ -10,6 +9,7 @@ eureka:
     fetch-registry: true
     #设置服务注册中心的URL，用于client和server端交流
     service-url:
-      defaultZone: http://euk2.com:7002/eureka/
-  instance:
-    hostname: euk1.com
+      defaultZone: http://192.168.1.252:7001/eureka/,http://192.168.1.252:7002/eureka/
+#      defaultZone: http://euk2.com:7002/eureka/
+#  instance:
+#    hostname: euk1.com

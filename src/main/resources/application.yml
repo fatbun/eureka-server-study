@@ -1,8 +1,11 @@
+server:
+  port: 7000
+
 spring:
   profiles:
-    active: euk2
+    active: default,euk2
 
 eureka:
   instance:
     appname: Eureka-Server
-    prefer-ip-address: false
+    prefer-ip-address: true
