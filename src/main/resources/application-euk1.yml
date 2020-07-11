@@ -9,7 +9,7 @@ eureka:
     fetch-registry: true
     #设置服务注册中心的URL，用于client和server端交流
     service-url:
-      defaultZone: http://192.168.1.252:7001/eureka/,http://192.168.1.252:7002/eureka/
-#      defaultZone: http://euk2.com:7002/eureka/
-#  instance:
-#    hostname: euk1.com
+#      defaultZone: http://192.168.1.252:7001/eureka/,http://192.168.1.252:7002/eureka/
+      defaultZone: http://euk1.com:7001/eureka/,http://euk2.com:7002/eureka/
+  instance:
+    hostname: euk1.com

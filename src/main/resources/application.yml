@@ -8,4 +8,5 @@ spring:
 eureka:
   instance:
     appname: Eureka-Server
-    prefer-ip-address: true
+#    prefer-ip-address: true
+    prefer-ip-address: false
